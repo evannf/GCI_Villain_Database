@@ -1,45 +1,7 @@
-const { urlencoded } = require('express')
 const express = require('express')
 const router = express.Router()
+const db = require('../models')
 const Villain = require("../models/villains.js")
-
-
-// SEED
-router.get('/seed', async (req, res) => {
-    const villains =
-    [
-        {
-            name: 'Phanthom Limb',
-            age: 45,
-            img: 'https://play-images-prod-catalog.tech.tvnz.co.nz/31537666-31537905.jpeg',
-            abilities: 'Invisible limbs that can kill with a simple touch, deflect projectiles, and can detach to be used at length.',
-            bio: "A current member of the new Council. Following a disagreement with the Guild, Limb attempted to overthrow the Sovereign and seize control of the Guild. His crimes were forgiven due to his hand in bringing the Guild out of a dark age after the Sovereign went mad.",
-            nemesis: "N/A"
-        }
-        // }, {
-        //     name: { type: String, required: true },
-        //     age: Number,
-        //     img: String,
-        //     abilities: String,
-        //     bio: String,
-        //     nemesis: String
-        // },{
-        //     name: { type: String, required: true },
-        //     age: Number,
-        //     img: String,
-        //     abilities: String,
-        //     bio: String,
-        //     nemesis: String
-        // }
-    ]
-    try {
-        const seedItems = await Villain.create(villains)
-        res.send(seedItems)
-      } catch (err) {
-        res.send(err.message)
-      }
-})
-
 
 //Index
 router.get('/', (req, res) => {

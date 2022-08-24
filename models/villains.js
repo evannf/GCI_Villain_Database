@@ -9,6 +9,6 @@ const villainSchema = new mongoose.Schema({
     nemesis: String
 })
 
-const villains = mongoose.model('Villains', villainSchema);
+const Villain = mongoose.model('Villains', villainSchema);
 
-module.exports = villains
+module.exports = Villain

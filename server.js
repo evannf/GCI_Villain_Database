@@ -1,13 +1,9 @@
+require('dotenv').config()
 const express = require('express')
 const app = express()
 const methodOverride = require('method-override');
 const mongoose = require('mongoose')
-const Product = require('./models/villains.js')
-
-const mongoURI = 'mongodb://localhost:27017/inventory'
-mongoose.connect(mongoURI, () => {
-    console.log('the connection with mongobd is established')
-})
+const Villain = require('./models/villains.js')
 
 app.use(express.static('public'));
 app.use(express.json());
