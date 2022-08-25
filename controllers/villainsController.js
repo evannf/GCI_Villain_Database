@@ -22,6 +22,18 @@ router.get('/:id', async (req, res) => {
       villain: villain,
     })
 });
+
+//New
+router.post('/', (req, res) => {
+    Villain.create(req.body, (err, newVillain) => {
+        if(err) {
+            console.log('error', error);
+            res.send(error);
+        } else {
+            res.redirect('/villains')
+        }
+    });
+});
   
 //Edit
 router.get('/:id/edit', (req, res) => {
