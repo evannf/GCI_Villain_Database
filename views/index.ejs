@@ -1,24 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+<%- include('./partials/header.ejs') %>
     <h1>Villains Index Page</h1>
     <ul>
         <% for(let i = 0; i < villains.length; i++) { %>
             <li>
                 <%= villains[i].name %>
-                <img src="<%= villains[i].img%>">
-                <div>
-                    <%= villains[i].age %>
-                    <%= villains[i].abilities %>
-                    <%= villains[i].bio %>
-                    <%= villains[i].nemesis %>
-                </div>
+                <a href="/villains/<%= villains[i].id %>"><img src="<%= villains[i].img%>"></a>
             </li>
         <% } %>
     </ul>

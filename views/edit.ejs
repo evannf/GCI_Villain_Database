@@ -1,0 +1,25 @@
+<%- include('./partials/header.ejs') %>
+
+<form method="POST" action="/villains/<%=villain.id%>?_method=PUT">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value="<%=villain.name%>">
+
+    <label for="age">Age</label>
+    <input type="text" name="age" id="age" value="<%=villain.age%>">
+
+    <label for="abilities">Abilities/Equipment</label> 
+    <input type="textbox" name="abilities" id="abilities" value="<%=villain.abilities%>">
+
+    <label for="bio">Biography</label>
+    <input type="textbox" name="bio" id="bio" value="<%=villain.bio%>">
+
+    <label for="nemesis">Nemesis</label>
+    <input type="text"  name="nemesis" id="nemesis" value="<%=villain.nemesis%>">
+
+    <!-- <label for="img">Image</label>
+    <input type="file" name="img" id="img" value="<%=villain.img%>"> -->
+
+    <input type="submit" value="Save Changes">
+</form>
+</body>
+</html>

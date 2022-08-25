@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(110,35,42);
+}
+h1{
+    -webkit-text-stroke: 1px rgb(255,204,102);
+    font-family: arial; color:black;
+}
+.logo{
+    max-width: 100px;
+}

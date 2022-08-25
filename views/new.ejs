@@ -1,0 +1,27 @@
+<%- include('./partials/header.ejs') %>
+
+    <h1>Register for the Guild</h1>
+    <p>Congragulations on your decision to join the Guild, the primary source for organized evil! Take a few moments to fill out the following information. Be honest, and be hateful.</p>
+    <form method="POST" action="/villains">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter Villain Name">
+
+        <label for="age">Age</label>
+        <input type="text" name="age" id="age" placeholder="Enter Your Age">
+
+        <label for="abilities">Abilities/Equipment</label> 
+        <input type="textbox" name="abilities" id="abilities" placeholder="Enter Any Abilities or Special Equipment">
+
+        <label for="bio">Biography</label>
+        <input type="textbox" name="bio" id="bio" placeholder="Tell Us About Yourself">
+
+        <label for="nemesis">Nemesis</label>
+        <input type="text"  name="nemesis" id="nemesis" placeholde="Nemesis name">
+
+        <label for="img">Image</label>
+        <input type="file" name="img" id="img" placeholder="Upload a picture of yourself">
+
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

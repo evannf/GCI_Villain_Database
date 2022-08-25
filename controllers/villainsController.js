@@ -9,6 +9,11 @@ router.get('/', (req, res) => {
       res.render("index.ejs", {villains})
     })
   });
+
+// NEW
+router.get('/new', (req, res) => {
+	res.render('new.ejs');
+});
   
 //Show
 router.get('/:id', async (req, res) => {
@@ -28,7 +33,7 @@ router.get('/:id/edit', (req, res) => {
 //Update
 router.put('/:id', (req, res) => {
     Villain.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateModel) => {
-      res.redirect('/villains')
+      res.redirect(`/villains/${req.params.id}`)
     })
 });
  
