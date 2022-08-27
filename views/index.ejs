@@ -1,10 +1,13 @@
 <%- include('./partials/header.ejs') %>
-    <h1>Villains Index Page</h1>
     <ul>
         <% for(let i = 0; i < villains.length; i++) { %>
             <li>
+                <div class="name">
+                <a href="/villains/<%= villains[i].id %>">
                 <%= villains[i].name %>
-                <a href="/villains/<%= villains[i].id %>"><img src="<%= villains[i].img%>"></a>
+                </a>
+                </div>
+                <img src="<%= villains[i].img%>">
             </li>
         <% } %>
     </ul>
