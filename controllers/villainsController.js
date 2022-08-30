@@ -5,7 +5,7 @@ const Villain = require("../models/villains.js")
 
 //Index
 router.get('/', (req, res) => {
-    Villain.find({}, (error, villains) => {
+    Villain.find({}, (err, villains) => {
       res.render("index.ejs", {villains})
     })
   });

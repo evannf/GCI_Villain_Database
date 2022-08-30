@@ -1,23 +1,31 @@
 <%- include('./partials/header.ejs') %>
     
-<div>
-    <%= villain.name %>
-   <img class="show" src="<%= villain.img %>">
-    <%= villain.age %>
-    <%= villain.abilities %>
-    <%= villain.bio %>
-    <%= villain.nemesis %>
+<img class="show" src="<%= villain.img %>">
+
+<div class="info">
+    Name: "<%= villain.name %>" <br>
+    <br>
+    Age: <%= villain.age %> <br>
+    <br>
+    Powers/Arsenal: "<%= villain.abilities %>" <br>
+    <br>
+    Bio: "<%= villain.bio %>" <br>
+    <br>
+    Nemesis: "<%= villain.nemesis %>" <br>
+    <br>
 </div>
+
+<div class="links">
 <a href="/villains/<%=villain.id%>/edit">
-    <button>Change Information</button>
+    <button class="link">Change Information</button>
 </a>
 <a href="/villains">
-    <button>Go Back</button>
+    <button class="link">Go Back</button>
 </a>
-
 <form action="/villains/<%=villain.id%>?_method=DELETE" method="POST">
-    <input type="submit" value="Terminate Member" />  
+    <input class="link" type="submit" value="Terminate Member" />  
 </form>
+</div>
 
 </body>
 </html>
