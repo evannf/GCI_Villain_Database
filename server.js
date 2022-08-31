@@ -16,7 +16,7 @@ const villainsController = require('./controllers/villainsController.js')
 app.use('/villains', villainsController)
 
 app.get('/', (req, res) => {
-    res.send("Welcome to the Guild")
+    res.render("main.ejs")
 })
 
 app.listen(PORT, () => {

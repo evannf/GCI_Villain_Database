@@ -9,7 +9,7 @@ body{
 
 nav{
     background-color: rgb(110,35,42);
-    border: 2mm ridge rgba(255, 204, 102, .6);
+    border: 2mm ridge rgba(255, 204, 102, .8);
     display: flex;
     flex-direction: row;
     position: sticky;
@@ -193,4 +193,26 @@ a:hover{
     background-color:rgb(90,90,90);
     margin-left: 500px;
     color:rgba(255, 204, 102, .6); 
+}
+
+.main{
+background: url("https://cdn.suwalls.com/wallpapers/cartoons/the-guild-of-calamitous-intent-42760-2560x1600.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.enter{
+    background-color: rgba(140,0,1, .8);
+    color: rgba(218, 128, 0);
+    -webkit-text-stroke: 2.5px black;
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+    left: 45.33%;
+    font-family: 'American Typewriter', serif;
+}
+
+.enter:hover{
+    background-color: rgba(15, 16, 20);
+    color:rgba(140,0,1, .8)
 }
