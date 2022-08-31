@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
+const PORT = process.env.PORT||3000;
 const methodOverride = require('method-override');
 const mongoose = require('mongoose')
 const Villain = require('./models/villains.js')
@@ -18,6 +19,6 @@ app.get('/', (req, res) => {
     res.send("Welcome to the Guild")
 })
 
-app.listen(3000, () => {
-    console.log('server running on port 3000 🦹🏻‍♂️')
+app.listen(PORT, () => {
+    console.log(`server running on port ${PORT} 🦹🏻‍♂️`)
 })
