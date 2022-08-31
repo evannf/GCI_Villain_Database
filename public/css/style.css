@@ -227,3 +227,7 @@ background-size: cover;
 .p{
     color: rgba(255, 204, 102, .8);
 }
+
+#name, #age, #abilities, #bio, #nemesis, #img {
+    color: black
+}
