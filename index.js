@@ -5,6 +5,12 @@ const PORT = process.env.PORT||3000;
 const methodOverride = require('method-override');
 const mongoose = require('mongoose')
 const Villain = require('./models/villains.js')
+// const path = require('path');
+
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname, 'index.html'))
+//     res.render("main.ejs");
+// });
 
 app.use(express.static('public'));
 app.use(express.json());

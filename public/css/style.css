@@ -215,7 +215,6 @@ background-size: cover;
     font-size: 50px;
     position: relative;
     top: 30px;
-    left: 45.33%;
     font-family: 'American Typewriter', serif;
 }
 
@@ -231,3 +230,132 @@ background-size: cover;
 #name, #age, #abilities, #bio, #nemesis, #img {
     color: black
 }
+
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+  @media screen and (max-width:1300px){
+    ul{
+        list-style-type: none;
+        text-align: center;
+        column-count: 3;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        padding: 20px;
+    }
+  }
+
+  @media screen and (max-width:870px){
+    ul{
+        list-style-type: none;
+        text-align: center;
+        column-count: 2;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        top: 0px;
+        align-items: center;
+    }
+    h1{
+        font-size: 36px;
+    }
+    .register{
+        top: 5%;
+    }
+  }
+
+  @media screen and (max-width:600px) {
+    li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        vertical-align: top;
+        padding: 20px;
+    }
+
+    ul{
+    
+        list-style-type: none;
+        text-align: center;
+        align-items: center;
+        column-count: 1;
+        width: 100%;
+        height: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        
+    }
+
+    .register{
+        background-color:rgba(140,0,1, .8);
+        font-size: 18px;
+        padding: 8px;
+        position: absolute;
+        right: 20px;
+        top: 136px;
+    }
+
+    .signUp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin: 10px;
+        margin-left: 140px;
+        padding: 30px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 204, 102, .6);
+        background-color:rgb(90,90,90);
+        color:rgba(140,0,1, .8);
+    }
+
+    .show{
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .info{
+        position: relative;
+        left: 0;
+        margin-left: 20px;
+    }
+    
+    .showPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+  }
