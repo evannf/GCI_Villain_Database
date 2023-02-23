@@ -213,7 +213,8 @@ background-size: cover;
     color: rgba(218, 128, 0);
     -webkit-text-stroke: 2.5px black;
     font-size: 50px;
-    position: relative;
+    position: absolute;
+    right: 45%;
     top: 30px;
     font-family: 'American Typewriter', serif;
 }
